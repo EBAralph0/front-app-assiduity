@@ -1,0 +1,21 @@
+<mat-tab-group  class="make_list_">
+    <mat-tab label="Faites l'appel pour cette classe"> 44
+       <mat-card *ngFor="let etudiant of etudiants" style="margin:8px;">
+    <mat-card-content>
+        <div>👤 {{ etudiant.nom }} {{ etudiant.prenom }} - {{ etudiant.classe }}</div>
+                    <mat-chip-listbox aria-label="Fish selection">
+                        <mat-chip-option (click)="setStatut(etudiant.id, etudiant.id,'present')" color="primary">Present</mat-chip-option>
+                        <mat-chip-option (click)="setStatut(etudiant.id, etudiant.id, 'absent')" color="warn" selected>Absent</mat-chip-option>
+                        <mat-chip-option (click)="setStatut(etudiant.id, etudiant.id, 'mis-temps')" color="accent">Mis-temps</mat-chip-option>
+                    </mat-chip-listbox>
+    </mat-card-content>
+  </mat-card>
+  <div class="group_btn_">
+    <button mat-raised-button (click)="ajouterPresences()" color="primary">Valider</button>
+    <button mat-stroked-button (click)="ajouterPresences()" color="primary">Valider</button>
+    <button mat-raised-button (click)="back()"color="accent">Annuler</button>
+</div>
+
+    </mat-tab  >
+        <mat-tab label="Etat d'assiduite pour cette salle"> Content 2 </mat-tab>
+</mat-tab-group >

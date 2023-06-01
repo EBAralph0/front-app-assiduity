@@ -1,0 +1,28 @@
+<mat-accordion >
+    <mat-expansion-panel hideToggle *ngFor="let e of COURS" class="content_card_etudiants">
+        <mat-expansion-panel-header>
+        <mat-panel-title>
+          {{e.nom | titlecase}}
+        </mat-panel-title>
+        <mat-panel-description>
+            {{e.description}} - {{e.date}}
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <p>Par {{e.nomEnseignant}} </p>
+      <p>Date {{e.date}} a {{e.horaire}} </p>
+      <p> {{e.salle}} -  {{e.intituleClasse}} </p>
+    <div style="display: flex; flex-direction: row; width:100% justify-content:end;">
+        <div class="example-button-container">
+            <button mat-fab color="primary" (click)="detail_cour()" aria-label="Example icon button with a delete icon">
+              <mat-icon>send</mat-icon>
+            </button>
+          </div>
+        <div class="example-button-container">
+          <button mat-fab color="primary" (click)="detail_cour()" aria-label="Example icon button with a delete icon">
+            <mat-icon>info</mat-icon>
+          </button>
+        </div>
+    </div>
+    </mat-expansion-panel>
+</mat-accordion>
+  

@@ -1,0 +1,33 @@
+.good_step{
+    color: limegreen;
+  }
+ 
+  .bad_step{
+    color: tomato ;
+  }
+
+  .medium_step{
+    color: gold ;
+  }
+
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+  table {
+    width: 100%;
+  }
+  
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  td, th {
+    width: 15%;
+  }
+  
+  .container{
+      max-width: 95%;
+      margin: 0 auto;
+      padding:80px ;
+ }

@@ -1,0 +1,19 @@
+.item_{
+    height: 30%;
+}
+
+.make_list_{
+    height: 80%;
+}
+
+.item_2{
+    display:flex;
+    flex-direction:row;
+}
+
+.group_btn_{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}

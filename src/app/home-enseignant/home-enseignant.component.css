@@ -1,0 +1,29 @@
+.content_all_home{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    overflow-y: scroll;
+    border-style: solid;
+}
+
+.left_profile{
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1%;
+    justify-content: space-evenly;
+    border-style: solid;
+}
+
+.class_list{
+    width: 75%;
+    border-style: solid;
+}
+
+.profile_photo{
+    width:64px;
+    height: 64px;
+    border-style: solid;
+}
